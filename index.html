@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda - Cahier de Texte</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🪞 Mon Agenda</h1>
+    <button id="addTaskBtn">＋ Ajouter</button>
+  </header>
+
+  <main id="taskContainer"></main>
+
+  <div id="taskModal" class="modal hidden">
+    <div class="modal-content glass">
+      <h2>Nouvelle Tâche</h2>
+      <input type="text" id="taskTitle" placeholder="Titre...">
+      <input type="date" id="taskDate">
+      <textarea id="taskDesc" placeholder="Description..."></textarea>
+      <button id="saveTask">💾 Enregistrer</button>
+      <button id="closeModal">✖ Fermer</button>
+    </div>
+  </div>
+</body>
+</html>
